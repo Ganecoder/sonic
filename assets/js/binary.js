@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.4.45/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.1","target":"arcade","targetVersion":"1.4.45","repo":"ganecoder/sonic"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.4.45/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.2","target":"arcade","targetVersion":"1.4.45","repo":"ganecoder/sonic"}
 // total=1900112 new=20.59% cached=74.79% other=4.62%
 (function (ectx) {
 'use strict';
@@ -490,7 +490,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P35866(s) {
+function _main___P36412(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1349,13 +1349,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P35866.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P35866.continuations = [  ]
+_main___P36412.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P36412.continuations = [  ]
 
-function _main___P35866_mk(s) {
+function _main___P36412_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P35866, depth: s.depth + 1,
+        parent: s, fn: _main___P36412, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -60371,5 +60371,5 @@ const effects_SceneAnchor__C4801_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___3976","tile1___3977","jump___33878","mySprite___33886","action___33919","choice___33923","textSprite2___33987","textsprite3___33992","textsprite4___33998","textsprite5___34003","textSprite6___34056","textSprite7___34068","metal___34159","special___34206","cpu___34227","rock___34409","ring___34415","textSprite___34359"])
 
-return _main___P35866
+return _main___P36412
 })
