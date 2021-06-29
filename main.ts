@@ -1084,11 +1084,19 @@ let metal: Sprite = null
 let mySprite: Sprite = null
 let textsprite3: TextSprite = null
 let textsprite5: TextSprite = null
-let textsprite4: TextSprite = null
 let textSprite2: TextSprite = null
 let choice = 0
 let action = 0
+let textsprite4: TextSprite = null
 blockSettings.writeNumber("character", 0)
+textsprite4 = textsprite.create("A Ganecoder game", 4, 9)
+textsprite4.setPosition(80, 60)
+pause(5000)
+textsprite4.setText("For my brother")
+pause(5000)
+color.FadeToBlack.startScreenEffect(1000)
+pause(1500)
+color.clearFadeEffect()
 scene.setBackgroundImage(img`
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
@@ -1215,7 +1223,7 @@ action = -3
 choice = 0
 textSprite2 = textsprite.create("Story", 8, 9)
 textSprite2.setPosition(79, 98)
-textsprite4 = textsprite.create("Reset", 4, 9)
+textsprite4.setText("reset")
 textsprite4.setPosition(130, 111)
 textsprite5 = textsprite.create("Character", 3, 9)
 textsprite5.setPosition(130, 98)
