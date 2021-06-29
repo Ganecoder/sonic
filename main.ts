@@ -786,6 +786,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 if (blockSettings.readNumber("bonus") == 2) {
                     blockSettings.writeNumber("character", 1)
                 }
+                if (blockSettings.readNumber("bonus") != 2) {
+                    blockSettings.writeNumber("character", 0)
+                }
             }
         }
     }
@@ -1085,7 +1088,6 @@ let textsprite4: TextSprite = null
 let textSprite2: TextSprite = null
 let choice = 0
 let action = 0
-blockSettings.writeNumber("character", 1)
 scene.setBackgroundImage(img`
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
