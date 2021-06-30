@@ -342,6 +342,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         }
         if (choice == 2) {
             blockSettings.writeNumber("bonus", 0)
+            blockSettings.writeNumber("character", 0)
+            blockSettings.writeNumber("start", 0)
             textsprite3.setText("Locked")
             textsprite3.setBorder(1, 10)
         }
@@ -1088,7 +1090,6 @@ let textSprite2: TextSprite = null
 let choice = 0
 let action = 0
 let textsprite4: TextSprite = null
-blockSettings.writeNumber("start", 1)
 blockSettings.writeNumber("character", 0)
 if (blockSettings.readNumber("start") != 1) {
     textsprite4 = textsprite.create("A Ganecoder game", 4, 9)
@@ -1103,6 +1104,7 @@ if (blockSettings.readNumber("start") != 1) {
 if (blockSettings.readNumber("start") == 1) {
     textsprite4 = textsprite.create("reset", 4, 9)
 }
+blockSettings.writeNumber("start", 1)
 scene.setBackgroundImage(img`
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
