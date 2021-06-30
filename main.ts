@@ -1088,15 +1088,21 @@ let textSprite2: TextSprite = null
 let choice = 0
 let action = 0
 let textsprite4: TextSprite = null
+blockSettings.writeNumber("start", 1)
 blockSettings.writeNumber("character", 0)
-textsprite4 = textsprite.create("A Ganecoder game", 4, 9)
-textsprite4.setPosition(80, 60)
-pause(5000)
-textsprite4.setText("For my brother")
-pause(5000)
-color.FadeToBlack.startScreenEffect(1000)
-pause(1500)
-color.clearFadeEffect()
+if (blockSettings.readNumber("start") != 1) {
+    textsprite4 = textsprite.create("A Ganecoder game", 4, 9)
+    textsprite4.setPosition(80, 60)
+    pause(5000)
+    textsprite4.setText("For my brother")
+    pause(5000)
+    color.FadeToBlack.startScreenEffect(1000)
+    pause(1500)
+    color.clearFadeEffect()
+}
+if (blockSettings.readNumber("start") == 1) {
+    textsprite4 = textsprite.create("reset", 4, 9)
+}
 scene.setBackgroundImage(img`
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
     2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
